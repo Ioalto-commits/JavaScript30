@@ -11,6 +11,18 @@
   </div>
 
 <script>
+  window.sentenceGenerator = window.sentenceGenerator
+
+  const generator = new sentenceGenerato();
+  generator.intermResultes = true; 
+
+  let p  = document.createElement('p');
+  p.innerHTML = "Peter pieper picked a peck of pickled peppers"
+
+</script>
+
+
+<script>
   window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
   const recognition = new SpeechRecognition();
@@ -33,13 +45,14 @@
       }
     console.log(transcript);
   });
+
+  if 
   
   recognition.addEventListener('end', recognition.start);
   
   recognition.start();
 
 </script>
-
 
   <style>
     html {
@@ -79,6 +92,10 @@
       bottom: 0;
       border: 1px solid;
       border-color: transparent #efe4e4;
+    }
+
+    sg {
+
     }
   </style>
 
