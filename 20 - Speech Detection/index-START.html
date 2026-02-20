@@ -15,14 +15,12 @@
 <script>
   window.sentenceGenerator = window.sentenceGenerator
 
-  const generator = new sentenceGenerato();
+  const generator = new sentenceGenerator();
   generator.intermResultes = true; 
 
   let h2  = document.createElement('h2');
-  prompt()
-  h2.setAttribute("style", "font-size: 16px");
-  document.body.appendChild(p);
-
+  let sentence = prompt("What is the challenge sentence?")
+  h2.console.log(sentence)
 </script>
 
 
@@ -72,10 +70,13 @@
 
     h2{
       max-width: 500px;
-      margin-top: 20px;
       border-radius: 5px;
       background-color: aliceblue;
-      position: absolute;
+      position: relative;
+      bottom: 100px;
+      box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+      background-size: 100% 3rem;
     }
     
     .words {
@@ -88,7 +89,7 @@
       background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
       background-size: 100% 3rem;
       position: relative;
-      top: 20px;
+      top: 60px;
       line-height: 3rem;
     }
 
